@@ -114,3 +114,86 @@ _createMemberForm.html_ 안에 데이터를 받는 name 변수명과 동일하�
 **html 파일에서 input 태그 안에 name 은 서버로 넘어올 때 키 값**
 
 ![2번 설명 이미지](/assets/images/2022-10-18-09-21-29.png)
+
+<hr>
+
+**_MemberForm.java_** (M)
+```java
+package com.hello.hellospring.controller;
+
+public class MemberForm {
+
+    private String name; //createMemberForm 안에 데이터를 받는 name 변수명과 동일하게
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+_**createMemberForm.html**_ (V)
+```html
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>web_mvc_예제-등록</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <div class="container">
+        <form action="/members/new" method="post">
+            <div>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요.">
+
+            </div>
+            <button type="submit">등록</button>
+        </form>
+    </div>
+</body>
+</html>
+```
+
+**_MemberController.java_** (C)
+```java
+package com.hello.hellospring.controller;
+
+import com.hello.hellospring.domain.Member;
+import com.hello.hellospring.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class MemberController {
+
+    //다른 곳에서도 쓰는 건 하나만 생성해서 공용으로 쓰는게 좋음
+    private final MemberService memberService;
+
+    @Autowired
+    public MemberController(MemberService memberService) {
+        this.memberService = memberService;
+    }
+
+    @GetMapping("members/new")
+    public String create(){
+        return "members/createMemberForm";
+    }
+
+    @PostMapping("members/new")
+    public String create(MemberForm form){
+        Member member = new Member();
+        member.setName(form.getName());
+
+        memberService.join(member);
+
+        return "redirect:/";
+    }
+
+}
+```

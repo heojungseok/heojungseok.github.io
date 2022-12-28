@@ -6,12 +6,12 @@ Tag: [springboot-basic]
 ---
 # SpringBoot 환경설정 / 프로젝트 생성/ view 환경 설정/ build 하고 실행 시키기
 
-구성 | 설정
+구성 | 환경설정
 :---:|:----------:
 OS | window 10
 IDE | intelliJ Ultimate
 jdk | opne jdk 1.8
-type | gradle
+project type | gradle
 dependencies | Spring Web, thymeleaf 
 
 ![springboot 구조](/assets/images/2022-10-17-13-54-05.png)
