@@ -1,5 +1,5 @@
 ---
-title: "SpringBoot 관련 포스팅"
+title: "SpringBoot"
 layout: category
 permalink: "/categories/springboot/"
 taxonomy: springboot

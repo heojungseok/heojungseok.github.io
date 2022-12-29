@@ -34,3 +34,8 @@ Tag: [springboot-basic]
   ![사용 예시 이미지](/assets/images/2022-10-17-14-55-07.png)
 
   ##### → 객체를 반환하는 것, view 없이 json 방식으로 브라우저에 내용을 띄움
+
+  ---
+ > 포스팅에 참고한 강의 링크 
+ >
+ >[김영한 - 스프링-핵심-원리-기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)
