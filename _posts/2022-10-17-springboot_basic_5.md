@@ -9,23 +9,29 @@ sidebar:
 
 # 회원 서비스 개발/ 회원 서비스 테스트/ 스프링 빈과 의존관계(컴포넌트 스캔과 자동 의존관계 설정)
 
+```
 용어적인 측면:
-
 서비스는 비즈니스에 의존적으로 설계
-
 리포지토리는 기계적인 용어 
+```
 
-컨트롤러가 서비스를 통해 관리가 되고 조회가 되는 것이 서비스를 의존 한다는 것
-​
+**※ 컨트롤러가 서비스를 통해 관리가 되고 조회가 되는 것이 서비스를 의존 한다는 것**
+
+<pre>
 컨트롤러 객체 생성(<u>@Controller</u> 어노테이션 사용)
 서비스를 위한 컨트롤러 클래스에 객체를 생성
 서비스의 생성자에 <u>@Autowired</u>를 붙여 컨테이너와 서비스를 연결
 (스프링이 관리하면 스프링 컨테이너에 등록이 되고 스프링으로 받아쓰게 되어있음)
 서비스를 위한 클래스에도 <u>@Service</u> 어노테이션 등록(Repository도 마찬가지)
+</pre>
 
+<p>
 MemberService 에서 사용하는 MemoryMemberRepository와
 MemberServiceTest 에서 사용하는 MemoryMemberRepository가 서로 다른 인스턴스
 <u>테스트는 같은 것으로</u> 하는 것이 맞기에 같은 인스턴스를 쓰게 바꿔야함
+</p>
+
+![순서 예시 이미지](/assets/images/2022-10-17-16-39-13.png){: .full}
 
 1. MemberService 클래스에서 직접 new 연산자로 생성하는 것이 아니라 memberRepository를 파라미터로 받는 생성자를 만듦 
 
@@ -33,44 +39,41 @@ MemberServiceTest 에서 사용하는 MemoryMemberRepository가 서로 다른 �
 memberRepository = new MemoryMemberRepository(); 
 memberService = new MemberService(memberRepository); 선언
 
-3. MemberService의 생성자를 통해 사용
+1. MemberService의 생성자를 통해 사용
 
-![순서 예시 이미지](/assets/images/2022-10-17-16-39-13.png)
-* MemberService 클래스의 입장에선 외부에서 memberRepository를 넣어줌(DI가 되버림)
+`MemberService 클래스의 입장에선 외부에서 memberRepository를 넣어줌(DI가 되버림)`
 
-정형화된 방법 
+***정형화된 방법***
 
-**controller** - 외부 요청을 받기 ,**service** - 비즈니스 로직 만들기 ,**repository**  - 데이터 저장
+> **controller** - 외부 요청을 받기 
+> 
+> **service** - 비즈니스 로직 만들기 
+> 
+> **repository**  - 데이터 저장
 
-​
-
-스프링 빈을 등록하는 2가지 방법
+### 스프링 빈을 등록하는 2가지 방법
  - 컴포넌트 스캔과 자동 의존관계 설정 = 어노테이션 사용하는 방법
  - 자바 코드로 직접 스프링 빈 등록
 
-​
+### ​컴포넌트 스캔과 자동 의존관계 설정
 
-컴포넌트 스캔과 자동 의존관계 설정
-
-@Component 어노테이션이 있으면 스프링 빈으로 자동 등록
-(@Controller, @Service, @Repository 모두 @Component를 포함)
-![스프링 빈 등록 이미지](/assets/images/2022-10-17-16-52-16.png)
+*@Component* 어노테이션이 있으면 스프링 빈으로 자동 등록<br>
+`(@Controller, @Service, @Repository 모두 @Component를 포함)`
+![스프링 빈 등록 이미지](/assets/images/2022-10-17-16-52-16.png){: .full}
 
 
 > 참고: 
-> 스프링은 스프링 컨테이너에 스프링 빈을 등록할 때, 기본으로 _싱글톤_ 으로 등록(유일하게 하나만 등록해서 공유) 따라서 같은 스프링 빈이면 모두 같은 인스턴스
-> 
-> 싱글톤: 유일하게 하나가 등록되는 것
+> 스프링은 스프링 컨테이너에 스프링 빈을 등록할 때, 기본으로 싱글톤<sup>[\[1\]](#footnote_1)</sup> 으로 등록(유일하게 하나만 등록해서 공유) 따라서 같은 스프링 빈이면 모두 같은 인스턴스
+
+
 <hr>
-* IntelliJ 단축키
-어떠한 로직을 메소드로 바로 생성: Ctrl + Alt + M
 
-* **given, when, then 문법** (Test를 할 때 사용하면 좋은 방식)
-![테스트 방식 사용 이미지](/assets/images/2022-10-17-16-23-03.png)
+### given, when, then 문법 
+![테스트 방식 사용 이미지](/assets/images/2022-10-17-16-23-03.png){: .full}
 
-given: 상황이 주어지는 곳(데이터를 기반하는 곳)
-when: 실행 했을 때(어떤 걸 검증하는지 알 수 있음)
-then: 결과가 나오는 곳(검증부)
+*   given: 상황이 주어지는 곳(데이터를 기반하는 곳)
+*   when: 실행 했을 때(어떤 걸 검증하는지 알 수 있음)
+*   then: 결과가 나오는 곳(검증부)
 <hr>
 
 _**MemberService.java**_
@@ -233,6 +236,13 @@ public class MemberController {
     }
 }
 ```
+---
+***주석***
+<pre>
+1 : <span id="footnote_1">유일하게 하나로 등록되는 것 </span>
+ IntelliJ 단축키 : 어떠한 로직을 메소드로 바로 생성: Ctrl + Alt + M
+</pre>
+
 ---
  > 포스팅에 참고한 강의 링크 
  >

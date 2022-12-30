@@ -8,8 +8,7 @@ sidebar:
 ---
 # DB 연결/ 스프링 통합 테스트/ 스프링 JdbcTemplate
 
-**DB 연결 이전 포스팅** <br>
-[springboot_basic_#8](./2022-12-29-springboot_basic_8.md)
+> 이전 포스팅 : [SpringBoot - Basic #8](/springboot/springboot_basic_8){: .btn .btn--inverse}
 
 ## 스프링 통합 테스트
 스프링 컨테이너와 DB까지 연결한 통합 테스트, 웹을 켤 필요 없이 확인할 수 있음
@@ -18,7 +17,7 @@ _test/service/MemberServiceIntTest.class_ 생성
 _@SpringBootTest, @Transactional_ 어노테이션 생성(클래스)
 테스트 코드는 제일 편한 방법을 이용하면 됨(기존 코드는 Injection하면 좋음)
 
-![Test 클래스 이미지](/assets/images/2022-12-29-10-50-02.png)
+![Test 클래스 이미지](/assets/images/2022-12-29-10-50-02.png){: .full}
 <pre>
 @SpringBootTest: 스프링 컨테이너와 함께 실행
 ​@Transactional로 인해서 @BeforeEach, @AfterEach 어노테이션 필요없음
@@ -109,8 +108,9 @@ class MemberServiceIntgTest {
 테스트 돌릴 때 유저네임과 패스원드 관련한 에러가 나타나는데 
 이때, _application.properties_ 에 username과 관련된 코드 작성하면 해결
 </pre>
-![에러메세지](/assets/images/2022-12-29-11-00-06.png)
-![에러 해결 방법](/assets/images/2022-12-29-11-00-27.png)
+![에러메세지](/assets/images/2022-12-29-11-00-06.png){: .align-center}
+![에러 해결 방법](/assets/images/2022-12-29-11-00-27.png){: .align-center}
+
 `비밀번호는 설정을 안해놨기에 비밀번호 관련된 코드는 추가X`
 
 
@@ -119,7 +119,7 @@ class MemberServiceIntgTest {
 repository 디렉토리에 클래스 생성
 경로: _com.hello.hellospring/repository/JdbcTemplateMemberRepository_
 
-![참고 이미지1](/assets/images/2022-12-29-11-06-41.png)
+![참고 이미지1](/assets/images/2022-12-29-11-06-41.png){: .full}
 jdbcTemplate 쿼리를 날리고 결과를 로우 맵퍼를 통해 맵핑을 하고 리스트를 옵셔널로 바꿔서 반환
 
 <pre>
@@ -127,7 +127,7 @@ JdbcTemplateMemberReposritory가 완성이 되면
 SpringConfig에 @Bean으로 설정된 MemberRepository 안에 
 JdbcTemplateMemberReposritory(dataSource) 생성
 </pre>
-![참고 이미지2](/assets/images/2022-12-29-11-08-20.png)
+![참고 이미지2](/assets/images/2022-12-29-11-08-20.png){: .full}
 
 
 _JdbcTemplateMemberRepository_

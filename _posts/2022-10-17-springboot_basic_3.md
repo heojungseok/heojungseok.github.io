@@ -3,8 +3,7 @@ layout: single
 title: "SpringBoot - Basic #3"
 categories: springboot
 Tag: [springboot-basic]
-sidebar: 
-    nav: "docs"
+
 ---
 
 # 회원 관리 예제 - 비즈니스 요구사항 정리 / 회원 도메인과 레포지토리 만들기
@@ -13,17 +12,18 @@ sidebar:
 
 회원 관리 예제를 만들기 위해 생각해 볼 것들
 (간단한 예제이기에 데이터나 기능을 간략하게 구성)<br>
-데이터 | 기능
-:---:|:---:
-회원 ID와 이름 | 등록, 조회
 
-![계층 구조 이미지](/assets/images/2022-10-17-15-22-56.png)
-![클래스 의존 관계도](/assets/images/2022-10-17-15-23-20.png)
+|     데이터     |    기능    |
+|:------------: |:--------:|
+| 회원 ID와 이름 | 등록, 조회 |
+
+![계층 구조 이미지](/assets/images/2022-10-17-15-22-56.png){: .full}
+![클래스 의존 관계도](/assets/images/2022-10-17-15-23-20.png){: .full}
 
 
 * 회원 도메인과 레포지토리 만들기
 
-![프로젝트 구조](/assets/images/2022-10-17-15-25-19.png)
+![프로젝트 구조](/assets/images/2022-10-17-15-25-19.png){: .align-center}
 
 <hr>
 

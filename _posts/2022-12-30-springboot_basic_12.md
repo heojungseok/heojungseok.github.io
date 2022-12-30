@@ -24,10 +24,10 @@ sidebar:
 
  - 공통 관심 사항(cross-cutting concern) vs 핵심 관심 사항(core concern) 분리
 
-![스프링 컨테이너 이미지](/assets/images/2022-12-30-10-58-20.png)
+![스프링 컨테이너 이미지](/assets/images/2022-12-30-10-58-20.png){: .full}
 
 * **TimeTraceAop.java 생성**
-![TimeTraceAop.java 이미지](/assets/images/2022-12-30-10-59-27.png)
+![TimeTraceAop.java 이미지](/assets/images/2022-12-30-10-59-27.png){: .full}
 
 <pre>
 aop 패키지 생성 후 TimeTraceAop 클래스 생성, @Aspect 어노테이션
@@ -48,14 +48,15 @@ TimeTraceAop 클래스에 @Component 해도 됨
 
  - 원하는 적용 대상 선택 가능 @Around("execution(* <span style="color:green">*com.hello.hellospring*</span>...*(..))") 초록 부분 수정하여 가능
 
-> @Around("execution") : 어디에 AOP를 사용할 것인지 설정하는 어노테이션 문법이 따로 존재 보통 패키지 레벨로 함
+*@Around("execution") : 어디에 AOP를 사용할 것인지 설정하는 어노테이션 문법이 따로 존재 보통 패키지 레벨로 함*
+
 ---
 
 **의존관계 및 전체 흐름도**
 
 <p align="center" width="100%">
     <img alt=" AOP 적용 전 의존관계 이미지" width="45%" src="/assets/images/2022-12-30-11-08-08.png">
-    <img alt=" AOP 적용 후 의존관계 이미지" width="51%" src="/assets/images/2022-12-30-11-09-33.png">
+    <img alt=" AOP 적용 후 의존관계 이미지" width="53%" src="/assets/images/2022-12-30-11-09-33.png">
 </p>
 
 <p align="center" width="100%">

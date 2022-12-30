@@ -39,7 +39,8 @@ spring.jpa.hibernate.ddl-auto=none #자동으로 테이블 생성 하는 것을 
 #spring.jpa.hibernate.ddl-auto=create 설정 시 테이블 자동 생성
 ```
 
-> _**JPA = 객체와 ORM(Object Relational Mapping)**_
+---
+_**※JPA = 객체와 ORM(Object Relational Mapping)**_
 
 * Member class에 @Entity 어노테이션 생성
 
@@ -49,24 +50,25 @@ spring.jpa.hibernate.ddl-auto=none #자동으로 테이블 생성 하는 것을 
 DB 자동으로 id를 생성하는 것 = Identity
 </pre>
 
-![설정 이미지](/assets/images/2022-12-29-11-47-56.png)
+![설정 이미지](/assets/images/2022-12-29-11-47-56.png){: .full}
+
 `변수 name을 테이블의 컬럼으로 쓰고 싶으면 @Column 어노테이션에 (name = "컬럼명") 설정`
 
 * JpaMemberRepository 생성
 
   *   Jpa는 EntityManager로 동작
-    ![JpaMemberRepository 이미지](/assets/images/2022-12-29-12-00-19.png)
+    ![JpaMemberRepository 이미지](/assets/images/2022-12-29-12-00-19.png){: .aligh-center}
 
   *   JPA를 쓸 때는 항상 Transaction 있어야 함 - 데이터를 저장하고 변경하기 위해서
     MemberService 클래스에 생성
-    ![@Transactional 사용](/assets/images/2022-12-29-12-01-55.png)
+    ![@Transactional 사용](/assets/images/2022-12-29-12-01-55.png){: .aligh-center}
 
   *   JpaMemberRepository가 완성 됐으니 당연히 SpringConfig 안에 MemberRepository 설정
    EntityManager가 필요함
-    ![springConfig 설정 이미지ㄴ](/assets/images/2022-12-29-12-02-49.png)
+    ![springConfig 설정 이미지ㄴ](/assets/images/2022-12-29-12-02-49.png){: .aligh-center}
 
   * 테스트 로그 이미지
-    ![테스트 로그 이미지](/assets/images/2022-12-29-12-03-19.png)
+    ![테스트 로그 이미지](/assets/images/2022-12-29-12-03-19.png){: .aligh-center}
 
 _Member.java_
 ```java

@@ -27,6 +27,7 @@ sidebar:
 > 
 >   이러한 이유로 실무에서 관계형 데이터베이슬르 사용한다면 굉장히 유용
 
+---
 * SpringDataJpaMemberRepository 생성
 *repository/SpringDataJpaMemberRepository*
 <pre>
@@ -36,14 +37,14 @@ JpaRepository<t=member, id= pk type>, MemberRepository 다중 상속
 스프링 data jpa 가  JpaRepository를 상속 받고 있으면 
 구현체가 자동으로 생성되어 spring bean에 등록
 </pre>
-![인터페이스 설명 이미지](/assets/images/2022-12-30-10-22-33.png)
+![인터페이스 설명 이미지](/assets/images/2022-12-30-10-22-33.png){: .full}
 
 * SpringConfig 설정
 <pre>
 자동으로 만들어진 구현체를 가져다 씀
 MemberRepository 객체, 생성자 생성하여 MemberService와 의존관계 셋팅
 </pre>
-![SpringConfig.java 이미지](/assets/images/2022-12-30-10-24-20.png)
+![SpringConfig.java 이미지](/assets/images/2022-12-30-10-24-20.png){: .full}
 
 ---
  > 포스팅에 참고한 강의 링크 

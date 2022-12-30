@@ -10,15 +10,23 @@ sidebar:
 # 회원 도메인과 레포지토리 만들기-2 / 테스트 케이스 작성
 
 * **테스트 케이스 작성**
-_JUit_ 이라는 프레임워크로 테스트하면 훨씬 유용
-클래스명 규칙: 테스트를 위한 클래스명에 Test를 붙여 테스트용 클래스를 생성
-경로: src/test/java 
-![클래스명 예시 및 구조도](/assets/images/2022-10-17-15-43-39.png)
 
-* _MemoryMemberRepository image_
-![MemoryMemberRepository.java code image](/assets/images/2022-10-17-15-53-25.png)
-* _MemoryMemberRepositoryTest image_
-![MemoryMemberRepositoryTest.java code image](/assets/images/2022-10-17-15-54-43.png)
+![클래스명 예시 및 구조도](/assets/images/2022-10-17-15-43-39.png){: .align-left}
+<pre>
+<span style="font-weight: bold">JUit</span> 이라는 프레임워크로 테스트하면 훨씬 유용
+
+클래스명 규칙: 테스트를 위한 클래스명에 
+    Test를 붙여 테스트용 클래스를 생성
+    
+경로: <span style="font-weight: bold">src/test/java</span> 
+</pre>
+
+<br>
+
+* _MemoryMemberRepository.java_
+![MemoryMemberRepository.java code image](/assets/images/2022-10-17-15-53-25.png){: .full}
+* _MemoryMemberRepositoryTest.java_
+![MemoryMemberRepositoryTest.java code image](/assets/images/2022-10-17-15-54-43.png){: .full}
 _※주의:_ <u>테스트는 순서가 보장이 되지 않음, 테스트는 의존 관계 없이 설계 해야함(저장소나 공용 데이터를 깔끔하게 지워야함)</u>
 
 <p>위 이미지처럼 MemoryMemberRepository 클래스에는 테스트를 위한 메소드(데이터를 지우는 역할)를 만들어 놓고 MemoryMemberRepositoryTest에는 위에 메소드를 사용할 수 있는 메소드를 구현해야 함</p>
