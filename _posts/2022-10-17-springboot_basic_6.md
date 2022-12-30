@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #6"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # 스프링 빈과 의존관계(자바 코드로 직접 스프링 빈 등록)
 

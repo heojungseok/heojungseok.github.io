@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #4"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 
 # 회원 도메인과 레포지토리 만들기-2 / 테스트 케이스 작성

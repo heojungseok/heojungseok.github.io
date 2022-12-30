@@ -3,6 +3,7 @@ layout: single
 title: "pull request test posting"
 categories: manual
 Tag: [manual]
+search: false
 ---
 <link rel="short icon" href="#">
 git pullrequest test 7th.

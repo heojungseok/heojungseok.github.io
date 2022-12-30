@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #9"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # DB 연결/ 스프링 통합 테스트/ 스프링 JdbcTemplate
 

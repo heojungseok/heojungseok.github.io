@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #5"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 
 # 회원 서비스 개발/ 회원 서비스 테스트/ 스프링 빈과 의존관계(컴포넌트 스캔과 자동 의존관계 설정)

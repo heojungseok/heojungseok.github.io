@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #7"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # 회원 관리 예제 - 웹 MVC 개발(홈 화면, 등록)
 

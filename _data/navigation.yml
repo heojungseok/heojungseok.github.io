@@ -8,6 +8,22 @@ main:
    url: /categories/springboot/
  - title: "Vue"
    url: /categories/vue_intermediate/
+ - title: "Search"   
+   url: /search/
+
+docs: 
+  - title: "SPRINGBOOT"
+    children:
+      - title: "springboot_basic"
+        url: /categories/springboot/
+      - title: "springboot_core"
+        url: /categories/springboot_core/
+
+  - title: "VUE.JS"    
+    children: 
+      - title: "vue_intermediate"
+        url: /categories/vue_intermediate/
+  
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

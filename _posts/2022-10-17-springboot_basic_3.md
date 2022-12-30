@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #3"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 
 # 회원 관리 예제 - 비즈니스 요구사항 정리 / 회원 도메인과 레포지토리 만들기

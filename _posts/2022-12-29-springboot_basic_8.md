@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #8"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # 회원 웹 기능 (조회) / h2 설치 및 연결/ 연결을 위한 설정
 

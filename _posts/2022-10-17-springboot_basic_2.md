@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #2"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # 검색하기 / 정적 컨텐츠/ MVC와 템플릿엔진/ API
 

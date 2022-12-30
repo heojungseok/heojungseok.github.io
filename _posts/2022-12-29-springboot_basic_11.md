@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #11"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # 스프링 데이터 JPA
 

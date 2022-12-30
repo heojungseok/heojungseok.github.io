@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #12"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # AOP, AOP 적용
 

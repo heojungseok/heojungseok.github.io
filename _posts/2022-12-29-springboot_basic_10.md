@@ -3,6 +3,8 @@ layout: single
 title: "SpringBoot - Basic #10"
 categories: springboot
 Tag: [springboot-basic]
+sidebar: 
+    nav: "docs"
 ---
 # JPA
 
