@@ -4,7 +4,7 @@ main:
 #    url: /categories/
 #  - title: "Tag"
 #    url: /tags/
- - title: "SpringBoot"
+ - title: "Spring Boot"
    url: /categories/springboot/
  - title: "Vue"
    url: /categories/vue_intermediate/
@@ -12,18 +12,22 @@ main:
    url: /search/
 
 docs: 
-  - title: "SPRINGBOOT"
+  - title: "Spring Boot"
     children:
       - title: "springboot_basic"
         url: /categories/springboot/
       - title: "springboot_core"
         url: /categories/springboot_core/
 
-  - title: "VUE.JS"    
+  - title: "Vue.js"    
     children: 
       - title: "vue_intermediate"
         url: /categories/vue_intermediate/
   
+  - title: "HTTP"    
+    children: 
+      - title: "http"
+        url: /categories/http/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

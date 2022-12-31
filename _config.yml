@@ -108,18 +108,18 @@ author:
   location         : "Republic of Korea"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tjrwjdgj@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://heojungseok.github.io"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:tjrwjdgj@gmail.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://heojungseok.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/heojungseok"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/gjwjdtjr"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/gjwjdtjr"
 
 # Site Footer
 footer:
@@ -127,9 +127,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/heojungseok"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/gjwjdtjr"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/gjwjdtjr"
 
 
 # Reading Files
@@ -267,11 +267,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false # 읽는데 걸리는 소요 시간
       comments:  true
       share: true
       related: true
-      show_date: true
+      show_date: true # 포스팅 날짜 표기
       image: true
 
 date_format: "%Y-%m-%d"
