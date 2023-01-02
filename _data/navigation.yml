@@ -14,8 +14,8 @@ main:
 docs: 
   - title: "Spring Boot"
     children:
-      - title: "springboot_basic"
-        url: /categories/springboot/
+      - title: "springboot_intro"
+        url: /categories/springboot_intro/
       - title: "springboot_core"
         url: /categories/springboot_core/
 

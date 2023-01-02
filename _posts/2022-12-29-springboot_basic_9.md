@@ -1,14 +1,14 @@
 ---
 layout: single
-title: "SpringBoot - Basic #9"
+title: "SpringBoot - Intro #9"
 categories: springboot
-Tag: [springboot-basic]
+Tag: [spring-intro]
 sidebar: 
     nav: "docs"
 ---
 # DB 연결/ 스프링 통합 테스트/ 스프링 JdbcTemplate
 
-> 이전 포스팅 : [SpringBoot - Basic #8](/springboot/springboot_basic_8){: .btn .btn--inverse}
+> 이전 포스팅 : [SpringBoot - Intro #8](/springboot/springboot_basic_8){: .btn .btn--inverse}
 
 ## 스프링 통합 테스트
 스프링 컨테이너와 DB까지 연결한 통합 테스트, 웹을 켤 필요 없이 확인할 수 있음
@@ -228,4 +228,4 @@ public class JdbcTemplateMemberRepository implements MemberRepository {
 ---
  > 포스팅에 참고한 강의 링크 
  >
- >[김영한 - 스프링-핵심-원리-기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)
+ >[김영한 - 스프링-입문-스프링부트](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9E%85%EB%AC%B8-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8)
