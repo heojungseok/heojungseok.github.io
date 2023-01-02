@@ -4,10 +4,12 @@ main:
 #    url: /categories/
 #  - title: "Tag"
 #    url: /tags/
- - title: "Spring Boot"
-   url: /categories/springboot/
- - title: "Vue"
-   url: /categories/vue_intermediate/
+#  - title: "Spring Boot"
+#    url: /categories/springboot/
+#  - title: "Spring Boot Core"
+#    url: /categories/springboot_core/
+#  - title: "Vue"
+#    url: /categories/vue_intermediate/
  - title: "Search"   
    url: /search/
 
@@ -15,7 +17,7 @@ docs:
   - title: "Spring Boot"
     children:
       - title: "springboot_intro"
-        url: /categories/springboot_intro/
+        url: /categories/springboot/
       - title: "springboot_core"
         url: /categories/springboot_core/
 
