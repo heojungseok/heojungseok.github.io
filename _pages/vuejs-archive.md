@@ -1,5 +1,5 @@
 ---
-title: "Vue 관련 포스팅"
+title: "Vue_intermediate"
 layout: category
 permalink: "/categories/vue_intermediate/"
 taxonomy: vue_intermediate
