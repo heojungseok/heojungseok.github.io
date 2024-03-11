@@ -31,10 +31,10 @@ docs:
       - title: "http"
         url: /categories/http/
 
-  - title: "WEB-PACK"    
+  - title: "WEBPACK"    
     children: 
-      - title: "web-pack"
-        url: /categories/web-pack/
+      - title: "webpack"
+        url: /categories/webpack/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
