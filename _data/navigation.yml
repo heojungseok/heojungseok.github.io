@@ -30,6 +30,11 @@ docs:
     children: 
       - title: "http"
         url: /categories/http/
+
+  - title: "WEB-PACK"    
+    children: 
+      - title: "web-pack"
+        url: /categories/web-pack/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
